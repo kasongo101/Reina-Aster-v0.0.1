@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bgfc5dgdvsx7u"]
+
+[ext_resource type="PackedScene" uid="uid://cjt6ulkah71ke" path="res://katsumi.tscn" id="1_f3sb7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bce0v"]
+size = Vector2(1197, 175)
+
+[node name="World" type="Node2D" unique_id=1372787108]
+
+[node name="Katsumi" parent="." unique_id=815313375 instance=ExtResource("1_f3sb7")]
+position = Vector2(251, 260)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=883103238]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1882608466]
+position = Vector2(456.5, 570)
+shape = SubResource("RectangleShape2D_bce0v")

@@ -1,18 +1,20 @@
 [gd_scene format=3 uid="uid://cjt6ulkah71ke"]
 
 [ext_resource type="Script" uid="uid://b3xfts3pj7u3x" path="res://katsumi.gd" id="1_0eat0"]
-[ext_resource type="Texture2D" uid="uid://btyg0jluf6ap8" path="res://icon.svg" id="1_c7x6w"]
+[ext_resource type="Texture2D" uid="uid://dtdaay7issffl" path="res://New Piskel (1).png" id="2_0eat0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bce0v"]
-size = Vector2(118, 118)
+size = Vector2(27, 35)
 
 [node name="Katsumi" type="CharacterBody2D" unique_id=815313375]
+texture_filter = 1
 script = ExtResource("1_0eat0")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1474282618]
+texture_filter = 1
 position = Vector2(11, 4)
-texture = ExtResource("1_c7x6w")
+texture = ExtResource("2_0eat0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=516117513]
-position = Vector2(11, 4)
+position = Vector2(11.5, 2.5)
 shape = SubResource("RectangleShape2D_bce0v")
